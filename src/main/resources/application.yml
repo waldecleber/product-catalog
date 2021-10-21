@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /
+
+spring:
+  application:
+    name: product-catalog
+    description: API to implementation Open Banking
+
+info:
+  app:
+    name: Open Banking API
+    description: API to implementation Open Banking
+    version: 0.1.0
+
+management:
+  endpoints:
+    web:
+      base-path: /management
+      exposure:
+        include: health, info, env, refresh
+    endpoint:
+      health:
+        enabled: true
+      info:
+        enabled: true
+      env:
+        enabled: true
+      refresh:
+        enabled: true
